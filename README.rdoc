@@ -47,7 +47,7 @@ Setting total ingredients
 Refilling ginger ingredient
 .
 
-* Running low ginger ingredient
+Running low ginger ingredient
 .
 
 Ginger tea beverage object creation
