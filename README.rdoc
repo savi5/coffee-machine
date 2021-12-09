@@ -1,0 +1,92 @@
+== README
+
+* Ruby version
+      ruby 2.3.0
+
+* System dependencies
+    Config to any database from your local system with respective credentials in config/database.yml.
+
+* Class Design
+          Machine (/models/machine.rb)
+             contains multiple inheriance of classes Beverages , Ingredients
+          Beverages (/models/beverages.rb)
+             Parent class : Beverages
+             Child classes : Gingertea , Coffees
+          Ingredients (/models/ingredients.rb)
+             contails class instance variable total_ingredients used to set and update ingredients.
+
+
+* How to run the test suite
+    Used RSpec for testing in file spec/models/machine_spec.rb
+    To run test cases,
+       * Naviagte to directly /coffee-machine
+       * Run command in console,
+         > bundle install
+         > rspec spec/models/
+
+* Test case outputs : 
+
+
+Valid two parallel coffee execution for machine with 2 outlets
+coffee is prepared.
+coffee is prepared.
+.
+
+Valid single gingertea execution for machine with 2 outlets
+gingertea is prepared.
+.
+
+Setting total ingredients
+.
+
+Refilling ginger ingredient
+.
+
+Running low ginger ingredient
+.
+
+Ginger tea beverage object creation
+.
+
+Coffee beverage object creation
+.
+
+Executing different beverages parallely
+gingertea is prepared.
+coffee is prepared.
+coffee is prepared.
+.
+
+InValid 3 parallel coffee execution for machine with 2 outlets
+.
+
+Insufficient coffee
+coffee is prepared.
+coffee is prepared.
+coffee cannot be prepared as coffee is insufficient
+.
+
+Refilling ginger ingredient
+.
+
+Invalid beverage object creation
+.
+
+Executing same beverages parallely with insufficient ingredient coffee
+coffee is prepared.
+coffee is prepared.
+coffee cannot be prepared as coffee is insufficient
+.
+
+Executing different beverages parallely with insufficient common ingredient water
+gingertea is prepared.
+coffee is prepared.
+gingertea cannot be prepared as water is insufficient
+.
+
+Finished in 0.0325 seconds (files took 2.22 seconds to load)
+14 examples, 0 failures
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
