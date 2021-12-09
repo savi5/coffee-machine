@@ -10,19 +10,19 @@ GitHub link : https://github.com/savi5/coffee-machine
     Config to any database from your local system with respective credentials in config/database.yml.
 
 * Class Design
-          Machine (/models/machine.rb)
+          Machine (app/models/machine.rb)
              contains multiple inheriance of classes Beverages , Ingredients
-          Beverages (/models/beverages.rb)
+          Beverages (app/models/beverages.rb)
              Parent class : Beverages
              Child classes : Gingertea , Coffees
-          Ingredients (/models/ingredients.rb)
+          Ingredients (app/models/ingredients.rb)
              contails class instance variable total_ingredients used to set and update ingredients.
 
 
 * How to run the test suite
     Used RSpec for testing in file spec/models/machine_spec.rb
     To run test cases,
-       * Naviagte to directly /coffee-machine
+       * Naviagte to directory /coffee-machine
        * Run command in console,
          > bundle install
          > rspec spec/models/
