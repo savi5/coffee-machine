@@ -11,7 +11,7 @@ GitHub link : https://github.com/savi5/coffee-machine
 
 * Class Design
           Machine (app/models/machine.rb)
-             contains multiple inheriance of classes Beverages , Ingredients
+             contains multiple inheritance of classes Beverages , Ingredients
           Beverages (app/models/beverages.rb)
              Parent class : Beverages
              Child classes : Gingertea , Coffees
