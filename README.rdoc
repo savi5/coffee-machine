@@ -1,5 +1,7 @@
 == README
 
+GitHub link : https://github.com/savi5/coffee-machine
+
 * Ruby version
       ruby 2.3.0
 
