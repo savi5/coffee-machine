@@ -25,7 +25,7 @@ GitHub link : https://github.com/savi5/coffee-machine
        * Naviagte to directory /coffee-machine
        * Run command in console,
          > bundle install
-         > rspec spec/models/
+         > rspec spec/models/ 
 
 
 * Test case outputs : 
